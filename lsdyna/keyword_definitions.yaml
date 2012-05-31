@@ -1,0 +1,149 @@
+# Definition file for LS-DYNA keywords
+# author: Tim Hartman
+
+comment:  $
+keywords:
+  CONTROL_IMPLICIT_GENERAL:
+    cards:
+      - optional: No
+        repeat:   No
+        fields:
+        - {name:     IMFLAG, format:   I10, default: 0   }
+        - {name:        DT0, format:   F10, default:     }
+        - {name:     IMFORM, format:   I10, default: 2   }
+        - {name:       NSBS, format:   I10, default: 1   }
+        - {name:        IGS, format:   I10, default: 2   }
+        - {name:      CNSTN, format:   I10, default: 0   }
+        - {name:       FORM, format:   I10, default: 0   }
+        - {name:     ZERO_V, format:   I10, default: 0   }
+  CONTROL_TERMINATION:
+    cards:
+      - optional: No
+        repeat:   No
+        fields:
+        - name:     ENDTIM
+          format:   F10
+          default:  0.0
+          desc:     Termination time.
+        - name:     ENDCYC
+          format:   I10
+          default:  0
+          desc:     Termination cycle.
+        - name:     DTMIN
+          format:   F10
+          default:  0.0
+        - name:     ENDENG
+          format:   F10
+          default:  0.0
+        - name:     ENDMAS
+          format:   F10
+          default:  0.0
+  CONTROL_TIMESTEP:
+    cards:
+      - optional: No
+        repeat:   No
+        fields:
+        - {name:     DTINIT, format:   F10, default:     }
+        - {name:     TSSFAC, format:   F10, default: 0.90}
+        - {name:       ISDO, format:   I10, default: 0   }
+        - {name:     TSLIMT, format:   F10, default: 0.0 }
+        - {name:      DT2MS, format:   F10, default: 0.0 }
+        - {name:       LCTM, format:   I10, default: 0   }
+        - {name:      ERODE, format:   I10, default: 0   }
+        - {name:      MS1ST, format:   I10, default: 0   }
+      - optional: Yes
+        repeat:   No
+        fields:
+        - {name:     DT2MSF, format:   F10, default:     }
+        - {name:    DT2MSLC, format:   I10, default:     }
+        - {name:      IMSCL, format:   I10, default: 0   }
+  ELEMENT_SHELL:
+    cards:
+      - optional: No
+        repeat:   Yes
+        fields:
+        - {name:        EID, format:   I8 , default:     }
+        - {name:        PID, format:   I8 , default:     }
+        - {name:         N1, format:   I8 , default:     }
+        - {name:         N2, format:   I8 , default:     }
+        - {name:         N3, format:   I8 , default:     }
+        - {name:         N4, format:   I8 , default:     }
+        - {name:         N5, format:   I8 , default:     }
+        - {name:         N6, format:   I8 , default:     }
+        - {name:         N7, format:   I8 , default:     }
+        - {name:         N8, format:   I8 , default:     }
+  ELEMENT_SOLID:
+    cards:
+      - optional: No
+        repeat:   Yes
+        fields:
+        - {name:        EID, format:   I8 , default:     }
+        - {name:        PID, format:   I8 , default:     }
+        - {name:         N1, format:   I8 , default:     }
+        - {name:         N2, format:   I8 , default:     }
+        - {name:         N3, format:   I8 , default:     }
+        - {name:         N4, format:   I8 , default:     }
+        - {name:         N5, format:   I8 , default:     }
+        - {name:         N6, format:   I8 , default:     }
+        - {name:         N7, format:   I8 , default:     }
+        - {name:         N8, format:   I8 , default:     }
+  END:
+    cards:
+  KEYWORD:
+    cards:
+  LOAD_NODE_POINT: &LOAD_NODE_POINT
+    cards:
+      - optional: No
+        repeat:   Yes
+        fields:
+        - {name:     N(S)ID, format:   I10, default:     }
+        - {name:        DOF, format:   I10, default:     }
+        - {name:       LCID, format:   I10, default:     }
+        - {name:         SF, format:   F10, default: 1.0 }
+        - {name:        CID, format:   I10, default:     }
+        - {name:         M1, format:   I10, default: 0   }
+        - {name:         M2, format:   I10, default: 0   }
+        - {name:         M3, format:   I10, default: 0   }
+  LOAD_NODE_SET: *LOAD_NODE_POINT
+  NODE:
+    cards:
+      - optional: No
+        repeat:   Yes
+        fields:
+        - {name:        NID, format:   I8 , default:     }
+        - {name:          X, format:   F16, default: 0.0 }
+        - {name:          Y, format:   F16, default: 0.0 }
+        - {name:          Z, format:   F16, default: 0.0 }
+        - {name:         TC, format:   F8 , default: 0.0 }
+        - {name:         RC, format:   F8 , default: 0.0 }
+  SET_NODE: &SET_NODE
+    cards:
+      - optional: No
+        repeat:   No
+        fields:
+        - {name:        SID, format:   I10, default:     }
+        - {name:        DA1, format:   F10, default: 0.0 }
+        - {name:        DA2, format:   F10, default: 0.0 }
+        - {name:        DA3, format:   F10, default: 0.0 }
+        - {name:        DA4, format:   F10, default: 0.0 }
+      - optional: No
+        repeat:   Yes
+        fields:
+        - {name:    N(E)ID1, format:   I10, default:     }
+        - {name:    N(E)ID2, format:   I10, default:     }
+        - {name:    N(E)ID3, format:   I10, default:     }
+        - {name:    N(E)ID4, format:   I10, default:     }
+        - {name:    N(E)ID5, format:   I10, default:     }
+        - {name:    N(E)ID6, format:   I10, default:     }
+        - {name:    N(E)ID7, format:   I10, default:     }
+        - {name:    N(E)ID8, format:   I10, default:     }
+  SET_NODE_LIST: *SET_NODE
+  SET_SHELL: *SET_NODE
+  SET_SHELL_LIST: *SET_NODE
+  TITLE:
+    cards:
+      - optional: No
+        repeat:   No
+        fields:
+        - {name:      TITLE, format:   S80, default:     }
+    

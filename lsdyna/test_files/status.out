@@ -1,0 +1,24 @@
+
+ dt of cycle       1 is controlled by shell      element      77
+
+ time...........................   0.00000E+00
+ time step......................   1.00000E-02
+ kinetic energy.................   0.00000E+00
+ internal energy................   1.00000E-20
+ spring and damper energy.......   1.00000E-20
+ system damping energy..........   0.00000E+00
+ sliding interface energy.......   0.00000E+00
+ external work..................   0.00000E+00
+ eroded kinetic energy..........   0.00000E+00
+ eroded internal energy.........   0.00000E+00
+ eroded hourglass energy........   0.00000E+00
+ total energy...................   1.00000E-20
+ total energy / initial energy..   1.00000E+00
+ energy ratio w/o eroded energy.   1.00000E+00
+ global x velocity..............   0.00000E+00
+ global y velocity..............   0.00000E+00
+ global z velocity..............   0.00000E+00
+ cpu time per zone cycle............         0 nanoseconds
+ average cpu time per zone cycle....         0 nanoseconds
+ average clock time per zone cycle..    683710 nanoseconds
+

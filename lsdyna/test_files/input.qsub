@@ -1,0 +1,14 @@
+#!/bin/bash
+##PBS -N CP.s001
+#PBS -V
+#PBS -m bea
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=30:00
+#PBS -l mem=256M
+#PBS -d .
+#PBS -q short
+export LSTC_LICENSE=network
+export LSTC_LICENSE_SERVER=lic-01.esm.vt.edu
+ls971_d_R4_2_1_xeon64_redhat52 i=input.k
+#mpp971_d_R4.2.1_Intel_linux86-64_OpenMPI i=input.k
+#/opt/openmpi/bin/mpirun --hostfile $PBS_NODEFILE mpp971_d_R4.2.1_Intel_linux86-64_OpenMPI i=input.k

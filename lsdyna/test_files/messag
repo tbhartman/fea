@@ -1,0 +1,1789 @@
+      Date: 05/28/2012      Time: 12:31:44  
+
+     ___________________________________________________
+     |                                                 |
+     |  Livermore  Software  Technology  Corporation   |
+     |                                                 |
+     |  7374 Las Positas Road                          |
+     |  Livermore, CA 94551                            |
+     |  Tel: (925) 449-2500  Fax: (925) 449-2507       |
+     |  www.lstc.com                                   |
+     |_________________________________________________|
+     |                                                 |
+     |  LS-DYNA, A Program for Nonlinear Dynamic       |
+     |  Analysis of Structures in Three Dimensions     |
+     |  Version : ls971d R4.2.1   Date: 06/08/2009     |
+     |  Revision: 53450           Time: 07:09:25       |
+     |                                                 |
+     |  Features enabled in this version:              |
+     |    Shared Memory Parallel                       |
+     |    Interactive Graphics                         |
+     |    ANSYS Database format                        |
+     |    ANSYS License (ans110)                       |
+     |    32 Bit IEEE Binary File                      |
+     |                                                 |
+     |  Licensed to: Virginia Tech Dept of Eng Science |
+     |  Issued by  : LSTC_03202012                     |
+     |                                                 |
+     |  Platform   : Xeon64 System                     |
+     |  OS Level   : Linux 2.6.18                      |
+     |  Compiler   : Intel Fortran Compiler 10.1       |
+     |  Hostname   : compute-0-0.local                 |
+     |  Precision  : Double precision (I8R8)           |
+     |  Product ID : 53929                             |
+     |                                                 |
+     |  Unauthorized use infringes LSTC copyrights     |
+     |_________________________________________________|
+
+ Input file: input.k                                                                 
+
+
+ The native file format       : 64-bit small endian
+ Memory size from default     :    20000000
+ expanding   memory to    20000000 starting ls-dyna
+
+********  notice  ********  notice  ********  notice  ********
+*                                                            *
+* This is the LS-DYNA Finite Element code.                   *
+*                                                            *
+* Neither LSTC nor the authors assume any responsibility for *
+* the validity, accuracy, or applicability of any results    *
+* obtained from this system. The user must verify his own    *
+* results.                                                   *
+*                                                            *
+* LSTC endeavors to make the LS-DYNA code as complete,       *
+* accurate and easy to use as possible.                      *
+* Suggestions and comments are welcomed.  Please report any  *
+* errors encountered in either the documentation or results  *
+* immediately to LSTC through your site focus.               *
+*                                                            *
+* Copyright (C) 1990-2009                                    *
+* by Livermore Software Technology Corp. (LSTC)              *
+* All rights reserved                                        *
+*                                                            *
+********  notice  ********  notice  ********  notice  ********
+ contracting memory to           1 beginning of keyword reader
+ expanding   memory to       21002  
+ expanding   memory to       73474  
+ expanding   memory to      103474  
+ expanding   memory to      164926  
+ expanding   memory to      185132  
+ expanding   memory to      205212  
+
+ Open include file: input.plate.k
+ expanding   memory to      249269  
+ -> Processing pcomp
+
+ *** Warning *SET_NODE Set number          20 is empty
+
+ Memory required to process keyword     :       249269
+ contracting memory to           1 end of keyword reader
+
+ LS-DYNA will perform a structural only analysis 
+
+ Stress recovery trial                                                   
+                         ls-dyna ls971d.53450 R4.2.1  date 06/08/2009
+ expanding   memory to        2717 material, node and element data
+ expanding   memory to        2794 material properties
+ expanding   memory to        3811 element data
+ expanding   memory to        5255 gradient of damage data
+ expanding   memory to       12164 user control for contact interfaces
+ expanding   memory to       12167 for boundary cond. vectorization
+ expanding   memory to       12265 arbitrary element numbering input
+ expanding   memory to       13308 spc cards
+ expanding   memory to      205385 process element material data
+ expanding   memory to      207391 load curve data
+ expanding   memory to      207739 regularize time history data
+ contracting memory to      207535 rigidwall definitions
+ expanding   memory to      207680 nodal constraint sets
+ expanding   memory to      207869 contact interfaces
+ expanding   memory to      209157 implicit contact 1
+ contracting memory to      208869 contact segment data 1
+ expanding   memory to      209664 contact segment data 3
+ expanding   memory to      260054 contact definition
+ expanding   memory to      260697 rigid body
+ contracting memory to      260681 contact friction
+ contracting memory to      260681 implicit friction
+ expanding   memory to      260711 joints
+ contracting memory to      260711 shell solid interfaces
+ contracting memory to      260711 accelerometers
+ expanding   memory to      260811 rigid bodies for disp. termination
+ contracting memory to      260811 transformation to move nodes
+ expanding   memory to      260813 thermal expansion 0
+ expanding   memory to      260815 flexible body 2
+ contracting memory to      260815 implicit joints
+ expanding   memory to      260959 implicit allocation 1
+ expanding   memory to      260971 implicit allocation 2
+ expanding   memory to      261835 implicit allocation 4
+ expanding   memory to      261981 implicit allocation 5
+ expanding   memory to      292615 implicit allocation final
+ expanding   memory to      292636 implicit resultant force allocation
+
+ S t o r a g e   a l l o c a t i o n   
+
+ Memory required to begin solution      :       292636
+ Additional dynamically allocated memory:         4736
+                                   Total:       297372
+       1 t 0.0000E+00 dt 1.00E-02 flush i/o buffers
+       1 t 0.0000E+00 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step       1                           
+ ============================================================
+                time =  1.00000E-02
+   current step size =  1.00000E-02
+ expanding   memory to      295231 implicit lsolvr allocation 1
+ expanding   memory to      317386 implicit matrix storage
+ expanding   memory to      388086 linear eqn. solver allocation 2f
+ min. memory for in-core stiffness factorization=      0.5 Mw on processor    0
+ expanding   memory to      466842 linear eqn. solver numerical phase 1
+ expanding   memory to      468267 linear eqn. solver numerical phase 2
+ Iteration:   1     *|du|/|u| =  1.0000000E+00     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  2.1767998E-06     *Ei/E0 =  6.9345855E-08
+
+ Equilibrium convergence summary for time step       1 at time =  1.0000000E-02
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3826E-05
+     Final energy norm                        =  9.5879E-13
+     Final displacement norm                  =  2.9943E-21
+     Required tolerance                       =  6.3192E-16
+
+ BEGIN implicit statics  time step       2                           
+ ============================================================
+                time =  2.00000E-02
+   current step size =  1.00000E-02
+ expanding   memory to      519984 linear eqn. solver numerical phase 1
+ Iteration:   1     *|du|/|u| =  4.9999996E-01     *Ei/E0 =  9.9999956E-01
+ Iteration:   2     *|du|/|u| =  1.3066882E-06     *Ei/E0 =  6.9298685E-08
+
+ Equilibrium convergence summary for time step       2 at time =  2.0000000E-02
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3826E-05
+     Final energy norm                        =  9.5814E-13
+     Final displacement norm                  =  4.3159E-21
+     Required tolerance                       =  2.5277E-15
+
+ BEGIN implicit statics  time step       3                           
+ ============================================================
+                time =  3.00000E-02
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  3.3333310E-01     *Ei/E0 =  9.9999786E-01
+ Iteration:   2     *|du|/|u| =  1.2828225E-06     *Ei/E0 =  6.9256973E-08
+
+ Equilibrium convergence summary for time step       3 at time =  3.0000000E-02
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3826E-05
+     Final energy norm                        =  9.5756E-13
+     Final displacement norm                  =  9.3592E-21
+     Required tolerance                       =  5.6873E-15
+
+ BEGIN implicit statics  time step       4                           
+ ============================================================
+                time =  4.00000E-02
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.4999954E-01     *Ei/E0 =  9.9999502E-01
+ Iteration:   2     *|du|/|u| =  1.4682463E-06     *Ei/E0 =  6.9226491E-08
+
+ Equilibrium convergence summary for time step       4 at time =  4.0000000E-02
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3826E-05
+     Final energy norm                        =  9.5714E-13
+     Final displacement norm                  =  2.1796E-20
+     Required tolerance                       =  1.0111E-14
+
+ BEGIN implicit statics  time step       5                           
+ ============================================================
+                time =  5.00000E-02
+   current step size =  1.00000E-02
+ expanding   memory to      520166 linear eqn. solver numerical phase 1
+ Iteration:   1     *|du|/|u| =  1.9999929E-01     *Ei/E0 =  9.9999104E-01
+ Iteration:   2     *|du|/|u| =  1.7160442E-06     *Ei/E0 =  6.9214917E-08
+
+ Equilibrium convergence summary for time step       5 at time =  5.0000000E-02
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3826E-05
+     Final energy norm                        =  9.5698E-13
+     Final displacement norm                  =  4.6522E-20
+     Required tolerance                       =  1.5798E-14
+      22 t 5.0000E-02 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step       6                           
+ ============================================================
+                time =  6.00000E-02
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.6666569E-01     *Ei/E0 =  9.9998593E-01
+ Iteration:   2     *|du|/|u| =  1.9852058E-06     *Ei/E0 =  6.9231858E-08
+
+ Equilibrium convergence summary for time step       6 at time =  6.0000000E-02
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3826E-05
+     Final energy norm                        =  9.5721E-13
+     Final displacement norm                  =  8.9654E-20
+     Required tolerance                       =  2.2749E-14
+
+ BEGIN implicit statics  time step       7                           
+ ============================================================
+                time =  7.00000E-02
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.4285590E-01     *Ei/E0 =  9.9997968E-01
+ Iteration:   2     *|du|/|u| =  2.2627441E-06     *Ei/E0 =  6.9288852E-08
+
+ Equilibrium convergence summary for time step       7 at time =  7.0000000E-02
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3826E-05
+     Final energy norm                        =  9.5800E-13
+     Final displacement norm                  =  1.5853E-19
+     Required tolerance                       =  3.0963E-14
+
+ BEGIN implicit statics  time step       8                           
+ ============================================================
+                time =  8.00000E-02
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.2499849E-01     *Ei/E0 =  9.9997229E-01
+ Iteration:   2     *|du|/|u| =  2.5439238E-06     *Ei/E0 =  6.9399363E-08
+
+ Equilibrium convergence summary for time step       8 at time =  8.0000000E-02
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3826E-05
+     Final energy norm                        =  9.5953E-13
+     Final displacement norm                  =  2.6172E-19
+     Required tolerance                       =  4.0442E-14
+
+ BEGIN implicit statics  time step       9                           
+ ============================================================
+                time =  9.00000E-02
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.1110932E-01     *Ei/E0 =  9.9996377E-01
+ Iteration:   2     *|du|/|u| =  2.8268013E-06     *Ei/E0 =  6.9578782E-08
+
+ Equilibrium convergence summary for time step       9 at time =  9.0000000E-02
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3826E-05
+     Final energy norm                        =  9.6201E-13
+     Final displacement norm                  =  4.0900E-19
+     Required tolerance                       =  5.1184E-14
+
+ BEGIN implicit statics  time step      10                           
+ ============================================================
+                time =  1.00000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  9.9997936E-02     *Ei/E0 =  9.9995411E-01
+ Iteration:   2     *|du|/|u| =  3.1105007E-06     *Ei/E0 =  6.9844423E-08
+
+ Equilibrium convergence summary for time step      10 at time =  1.0000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3826E-05
+     Final energy norm                        =  9.6568E-13
+     Final displacement norm                  =  6.1137E-19
+     Required tolerance                       =  6.3189E-14
+
+ BEGIN implicit statics  time step      11                           
+ ============================================================
+                time =  1.10000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  9.0906750E-02     *Ei/E0 =  9.9994332E-01
+ Iteration:   2     *|du|/|u| =  3.3945983E-06     *Ei/E0 =  7.0215527E-08
+
+ Equilibrium convergence summary for time step      11 at time =  1.1000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3825E-05
+     Final energy norm                        =  9.7081E-13
+     Final displacement norm                  =  8.8105E-19
+     Required tolerance                       =  7.6458E-14
+      46 t 1.1000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      12                           
+ ============================================================
+                time =  1.20000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  8.3330714E-02     *Ei/E0 =  9.9993139E-01
+ Iteration:   2     *|du|/|u| =  3.6788776E-06     *Ei/E0 =  7.0713254E-08
+
+ Equilibrium convergence summary for time step      12 at time =  1.2000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3825E-05
+     Final energy norm                        =  9.7769E-13
+     Final displacement norm                  =  1.2315E-18
+     Required tolerance                       =  9.0990E-14
+
+ BEGIN implicit statics  time step      13                           
+ ============================================================
+                time =  1.30000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  7.6920178E-02     *Ei/E0 =  9.9991832E-01
+ Iteration:   2     *|du|/|u| =  3.9632229E-06     *Ei/E0 =  7.1360686E-08
+
+ Equilibrium convergence summary for time step      13 at time =  1.3000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3825E-05
+     Final energy norm                        =  9.8665E-13
+     Final displacement norm                  =  1.6773E-18
+     Required tolerance                       =  1.0679E-13
+
+ BEGIN implicit statics  time step      14                           
+ ============================================================
+                time =  1.40000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  7.1425393E-02     *Ei/E0 =  9.9990412E-01
+ Iteration:   2     *|du|/|u| =  4.2475706E-06     *Ei/E0 =  7.2182820E-08
+
+ Equilibrium convergence summary for time step      14 at time =  1.4000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3825E-05
+     Final energy norm                        =  9.9801E-13
+     Final displacement norm                  =  2.2344E-18
+     Required tolerance                       =  1.2384E-13
+
+ BEGIN implicit statics  time step      15                           
+ ============================================================
+                time =  1.50000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  6.6663207E-02     *Ei/E0 =  9.9988879E-01
+ Iteration:   2     *|du|/|u| =  4.5318847E-06     *Ei/E0 =  7.3206571E-08
+
+ Equilibrium convergence summary for time step      15 at time =  1.5000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3825E-05
+     Final energy norm                        =  1.0122E-12
+     Final displacement norm                  =  2.9198E-18
+     Required tolerance                       =  1.4217E-13
+
+ BEGIN implicit statics  time step      16                           
+ ============================================================
+                time =  1.60000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  6.2496260E-02     *Ei/E0 =  9.9987232E-01
+ Iteration:   2     *|du|/|u| =  4.8161444E-06     *Ei/E0 =  7.4460765E-08
+
+ Equilibrium convergence summary for time step      16 at time =  1.6000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3824E-05
+     Final energy norm                        =  1.0295E-12
+     Final displacement norm                  =  3.7518E-18
+     Required tolerance                       =  1.6175E-13
+      66 t 1.6000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      17                           
+ ============================================================
+                time =  1.70000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  5.8819508E-02     *Ei/E0 =  9.9985471E-01
+ Iteration:   2     *|du|/|u| =  5.1003374E-06     *Ei/E0 =  7.5976140E-08
+
+ Equilibrium convergence summary for time step      17 at time =  1.7000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3824E-05
+     Final energy norm                        =  1.0505E-12
+     Final displacement norm                  =  4.7500E-18
+     Required tolerance                       =  1.8260E-13
+
+ BEGIN implicit statics  time step      18                           
+ ============================================================
+                time =  1.80000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  5.5551253E-02     *Ei/E0 =  9.9983598E-01
+ Iteration:   2     *|du|/|u| =  5.3844565E-06     *Ei/E0 =  7.7785342E-08
+
+ Equilibrium convergence summary for time step      18 at time =  1.8000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3824E-05
+     Final energy norm                        =  1.0755E-12
+     Final displacement norm                  =  5.9350E-18
+     Required tolerance                       =  2.0471E-13
+
+ BEGIN implicit statics  time step      19                           
+ ============================================================
+                time =  1.90000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  5.2626995E-02     *Ei/E0 =  9.9981610E-01
+ Iteration:   2     *|du|/|u| =  5.6684971E-06     *Ei/E0 =  7.9922918E-08
+
+ Equilibrium convergence summary for time step      19 at time =  1.9000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3824E-05
+     Final energy norm                        =  1.1050E-12
+     Final displacement norm                  =  7.3286E-18
+     Required tolerance                       =  2.2808E-13
+
+ BEGIN implicit statics  time step      20                           
+ ============================================================
+                time =  2.00000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  4.9995134E-02     *Ei/E0 =  9.9979510E-01
+ Iteration:   2     *|du|/|u| =  5.9524561E-06     *Ei/E0 =  8.2425321E-08
+
+ Equilibrium convergence summary for time step      20 at time =  2.0000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3823E-05
+     Final energy norm                        =  1.1396E-12
+     Final displacement norm                  =  8.9541E-18
+     Required tolerance                       =  2.5271E-13
+      82 t 2.0000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      21                           
+ ============================================================
+                time =  2.10000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  4.7613900E-02     *Ei/E0 =  9.9977296E-01
+ Iteration:   2     *|du|/|u| =  6.2363317E-06     *Ei/E0 =  8.5330899E-08
+
+ Equilibrium convergence summary for time step      21 at time =  2.1000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3823E-05
+     Final energy norm                        =  1.1798E-12
+     Final displacement norm                  =  1.0836E-17
+     Required tolerance                       =  2.7861E-13
+
+ BEGIN implicit statics  time step      22                           
+ ============================================================
+                time =  2.20000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  4.5449115E-02     *Ei/E0 =  9.9974968E-01
+ Iteration:   2     *|du|/|u| =  6.5201221E-06     *Ei/E0 =  8.8679895E-08
+
+ Equilibrium convergence summary for time step      22 at time =  2.2000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3823E-05
+     Final energy norm                        =  1.2261E-12
+     Final displacement norm                  =  1.2999E-17
+     Required tolerance                       =  3.0577E-13
+
+ BEGIN implicit statics  time step      23                           
+ ============================================================
+                time =  2.30000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  4.3472549E-02     *Ei/E0 =  9.9972528E-01
+ Iteration:   2     *|du|/|u| =  6.8038260E-06     *Ei/E0 =  9.2514444E-08
+
+ Equilibrium convergence summary for time step      23 at time =  2.3000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3822E-05
+     Final energy norm                        =  1.2791E-12
+     Final displacement norm                  =  1.5470E-17
+     Required tolerance                       =  3.3419E-13
+
+ BEGIN implicit statics  time step      24                           
+ ============================================================
+                time =  2.40000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  4.1660672E-02     *Ei/E0 =  9.9969974E-01
+ Iteration:   2     *|du|/|u| =  7.0874421E-06     *Ei/E0 =  9.6878566E-08
+
+ Equilibrium convergence summary for time step      24 at time =  2.4000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3822E-05
+     Final energy norm                        =  1.3395E-12
+     Final displacement norm                  =  1.8278E-17
+     Required tolerance                       =  3.6387E-13
+
+ BEGIN implicit statics  time step      25                           
+ ============================================================
+                time =  2.50000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  3.9993723E-02     *Ei/E0 =  9.9967307E-01
+ Iteration:   2     *|du|/|u| =  7.3709690E-06     *Ei/E0 =  1.0181817E-07
+
+ Equilibrium convergence summary for time step      25 at time =  2.5000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3822E-05
+     Final energy norm                        =  1.4078E-12
+     Final displacement norm                  =  2.1451E-17
+     Required tolerance                       =  3.9482E-13
+     102 t 2.5000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      26                           
+ ============================================================
+                time =  2.60000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  3.8454979E-02     *Ei/E0 =  9.9964526E-01
+ Iteration:   2     *|du|/|u| =  7.6544054E-06     *Ei/E0 =  1.0738102E-07
+
+ Equilibrium convergence summary for time step      26 at time =  2.6000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3821E-05
+     Final energy norm                        =  1.4847E-12
+     Final displacement norm                  =  2.5019E-17
+     Required tolerance                       =  4.2702E-13
+
+ BEGIN implicit statics  time step      27                           
+ ============================================================
+                time =  2.70000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  3.7030195E-02     *Ei/E0 =  9.9961633E-01
+ Iteration:   2     *|du|/|u| =  7.9377498E-06     *Ei/E0 =  1.1361680E-07
+
+ Equilibrium convergence summary for time step      27 at time =  2.7000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3821E-05
+     Final energy norm                        =  1.5709E-12
+     Final displacement norm                  =  2.9014E-17
+     Required tolerance                       =  4.6049E-13
+
+ BEGIN implicit statics  time step      28                           
+ ============================================================
+                time =  2.80000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  3.5707162E-02     *Ei/E0 =  9.9958626E-01
+ Iteration:   2     *|du|/|u| =  8.2210006E-06     *Ei/E0 =  1.2057702E-07
+
+ Equilibrium convergence summary for time step      28 at time =  2.8000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3820E-05
+     Final energy norm                        =  1.6671E-12
+     Final displacement norm                  =  3.3469E-17
+     Required tolerance                       =  4.9522E-13
+
+ BEGIN implicit statics  time step      29                           
+ ============================================================
+                time =  2.90000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  3.4475352E-02     *Ei/E0 =  9.9955507E-01
+ Iteration:   2     *|du|/|u| =  8.5041562E-06     *Ei/E0 =  1.2831507E-07
+
+ Equilibrium convergence summary for time step      29 at time =  2.9000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3820E-05
+     Final energy norm                        =  1.7741E-12
+     Final displacement norm                  =  3.8417E-17
+     Required tolerance                       =  5.3120E-13
+
+ BEGIN implicit statics  time step      30                           
+ ============================================================
+                time =  3.00000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  3.3325644E-02     *Ei/E0 =  9.9952274E-01
+ Iteration:   2     *|du|/|u| =  8.7872148E-06     *Ei/E0 =  1.3688621E-07
+
+ Equilibrium convergence summary for time step      30 at time =  3.0000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3820E-05
+     Final energy norm                        =  1.8926E-12
+     Final displacement norm                  =  4.3893E-17
+     Required tolerance                       =  5.6845E-13
+     122 t 3.0000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      31                           
+ ============================================================
+                time =  3.10000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  3.2250093E-02     *Ei/E0 =  9.9948928E-01
+ Iteration:   2     *|du|/|u| =  9.0701746E-06     *Ei/E0 =  1.4634754E-07
+
+ Equilibrium convergence summary for time step      31 at time =  3.1000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3819E-05
+     Final energy norm                        =  2.0234E-12
+     Final displacement norm                  =  4.9933E-17
+     Required tolerance                       =  6.0696E-13
+
+ BEGIN implicit statics  time step      32                           
+ ============================================================
+                time =  3.20000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  3.1241746E-02     *Ei/E0 =  9.9945470E-01
+ Iteration:   2     *|du|/|u| =  9.3530336E-06     *Ei/E0 =  1.5675802E-07
+
+ Equilibrium convergence summary for time step      32 at time =  3.2000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3819E-05
+     Final energy norm                        =  2.1674E-12
+     Final displacement norm                  =  5.6575E-17
+     Required tolerance                       =  6.4672E-13
+
+ BEGIN implicit statics  time step      33                           
+ ============================================================
+                time =  3.30000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  3.0294494E-02     *Ei/E0 =  9.9941898E-01
+ Iteration:   2     *|du|/|u| =  9.6357897E-06     *Ei/E0 =  1.6817844E-07
+
+ Equilibrium convergence summary for time step      33 at time =  3.3000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3818E-05
+     Final energy norm                        =  2.3253E-12
+     Final displacement norm                  =  6.3857E-17
+     Required tolerance                       =  6.8775E-13
+
+ BEGIN implicit statics  time step      34                           
+ ============================================================
+                time =  3.40000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.9402946E-02     *Ei/E0 =  9.9938214E-01
+ Iteration:   2     *|du|/|u| =  9.9184410E-06     *Ei/E0 =  1.8067146E-07
+
+ Equilibrium convergence summary for time step      34 at time =  3.4000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3818E-05
+     Final energy norm                        =  2.4980E-12
+     Final displacement norm                  =  7.1818E-17
+     Required tolerance                       =  7.3004E-13
+
+ BEGIN implicit statics  time step      35                           
+ ============================================================
+                time =  3.50000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.8562327E-02     *Ei/E0 =  9.9934417E-01
+ Iteration:   2     *|du|/|u| =  1.0200985E-05     *Ei/E0 =  1.9430152E-07
+
+ Equilibrium convergence summary for time step      35 at time =  3.5000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3817E-05
+     Final energy norm                        =  2.6864E-12
+     Final displacement norm                  =  8.0499E-17
+     Required tolerance                       =  7.7358E-13
+     142 t 3.5000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      36                           
+ ============================================================
+                time =  3.60000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.7768394E-02     *Ei/E0 =  9.9930507E-01
+ Iteration:   2     *|du|/|u| =  1.0483420E-05     *Ei/E0 =  2.0913495E-07
+
+ Equilibrium convergence summary for time step      36 at time =  3.6000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3817E-05
+     Final energy norm                        =  2.8915E-12
+     Final displacement norm                  =  8.9942E-17
+     Required tolerance                       =  8.1839E-13
+
+ BEGIN implicit statics  time step      37                           
+ ============================================================
+                time =  3.70000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.7017361E-02     *Ei/E0 =  9.9926484E-01
+ Iteration:   2     *|du|/|u| =  1.0765744E-05     *Ei/E0 =  2.2523984E-07
+
+ Equilibrium convergence summary for time step      37 at time =  3.7000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3816E-05
+     Final energy norm                        =  3.1142E-12
+     Final displacement norm                  =  1.0019E-16
+     Required tolerance                       =  8.6445E-13
+
+ BEGIN implicit statics  time step      38                           
+ ============================================================
+                time =  3.80000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.6305841E-02     *Ei/E0 =  9.9922349E-01
+ Iteration:   2     *|du|/|u| =  1.1047953E-05     *Ei/E0 =  2.4268615E-07
+
+ Equilibrium convergence summary for time step      38 at time =  3.8000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3815E-05
+     Final energy norm                        =  3.3554E-12
+     Final displacement norm                  =  1.1129E-16
+     Required tolerance                       =  9.1177E-13
+
+ BEGIN implicit statics  time step      39                           
+ ============================================================
+                time =  3.90000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.5630795E-02     *Ei/E0 =  9.9918102E-01
+ Iteration:   2     *|du|/|u| =  1.1330047E-05     *Ei/E0 =  2.6154560E-07
+
+ Equilibrium convergence summary for time step      39 at time =  3.9000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3815E-05
+     Final energy norm                        =  3.6162E-12
+     Final displacement norm                  =  1.2328E-16
+     Required tolerance                       =  9.6035E-13
+
+ BEGIN implicit statics  time step      40                           
+ ============================================================
+                time =  4.00000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.4989487E-02     *Ei/E0 =  9.9913741E-01
+ Iteration:   2     *|du|/|u| =  1.1612022E-05     *Ei/E0 =  2.8189175E-07
+
+ Equilibrium convergence summary for time step      40 at time =  4.0000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3814E-05
+     Final energy norm                        =  3.8975E-12
+     Final displacement norm                  =  1.3621E-16
+     Required tolerance                       =  1.0102E-12
+     162 t 4.0000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      41                           
+ ============================================================
+                time =  4.10000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.4379449E-02     *Ei/E0 =  9.9909269E-01
+ Iteration:   2     *|du|/|u| =  1.1893875E-05     *Ei/E0 =  3.0379992E-07
+
+ Equilibrium convergence summary for time step      41 at time =  4.1000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3814E-05
+     Final energy norm                        =  4.2004E-12
+     Final displacement norm                  =  1.5013E-16
+     Required tolerance                       =  1.0613E-12
+
+ BEGIN implicit statics  time step      42                           
+ ============================================================
+                time =  4.20000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.3798447E-02     *Ei/E0 =  9.9904684E-01
+ Iteration:   2     *|du|/|u| =  1.2175606E-05     *Ei/E0 =  3.2734725E-07
+
+ Equilibrium convergence summary for time step      42 at time =  4.2000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3813E-05
+     Final energy norm                        =  4.5260E-12
+     Final displacement norm                  =  1.6509E-16
+     Required tolerance                       =  1.1136E-12
+
+ BEGIN implicit statics  time step      43                           
+ ============================================================
+                time =  4.30000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.3244455E-02     *Ei/E0 =  9.9899986E-01
+ Iteration:   2     *|du|/|u| =  1.2457210E-05     *Ei/E0 =  3.5261263E-07
+
+ Equilibrium convergence summary for time step      43 at time =  4.3000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3812E-05
+     Final energy norm                        =  4.8753E-12
+     Final displacement norm                  =  1.8113E-16
+     Required tolerance                       =  1.1672E-12
+
+ BEGIN implicit statics  time step      44                           
+ ============================================================
+                time =  4.40000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.2715632E-02     *Ei/E0 =  9.9895177E-01
+ Iteration:   2     *|du|/|u| =  1.2738686E-05     *Ei/E0 =  3.7967675E-07
+
+ Equilibrium convergence summary for time step      44 at time =  4.4000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3812E-05
+     Final energy norm                        =  5.2495E-12
+     Final displacement norm                  =  1.9831E-16
+     Required tolerance                       =  1.2221E-12
+
+ BEGIN implicit statics  time step      45                           
+ ============================================================
+                time =  4.50000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.2210299E-02     *Ei/E0 =  9.9890255E-01
+ Iteration:   2     *|du|/|u| =  1.3020031E-05     *Ei/E0 =  4.0862206E-07
+
+ Equilibrium convergence summary for time step      45 at time =  4.5000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3811E-05
+     Final energy norm                        =  5.6497E-12
+     Final displacement norm                  =  2.1668E-16
+     Required tolerance                       =  1.2782E-12
+     182 t 4.5000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      46                           
+ ============================================================
+                time =  4.60000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.1726926E-02     *Ei/E0 =  9.9885221E-01
+ Iteration:   2     *|du|/|u| =  1.3301243E-05     *Ei/E0 =  4.3953275E-07
+
+ Equilibrium convergence summary for time step      46 at time =  4.6000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3810E-05
+     Final energy norm                        =  6.0771E-12
+     Final displacement norm                  =  2.3629E-16
+     Required tolerance                       =  1.3356E-12
+
+ BEGIN implicit statics  time step      47                           
+ ============================================================
+                time =  4.70000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.1264109E-02     *Ei/E0 =  9.9880075E-01
+ Iteration:   2     *|du|/|u| =  1.3582319E-05     *Ei/E0 =  4.7249479E-07
+
+ Equilibrium convergence summary for time step      47 at time =  4.7000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3810E-05
+     Final energy norm                        =  6.5328E-12
+     Final displacement norm                  =  2.5720E-16
+     Required tolerance                       =  1.3942E-12
+
+ BEGIN implicit statics  time step      48                           
+ ============================================================
+                time =  4.80000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.0820565E-02     *Ei/E0 =  9.9874816E-01
+ Iteration:   2     *|du|/|u| =  1.3863255E-05     *Ei/E0 =  5.0759586E-07
+
+ Equilibrium convergence summary for time step      48 at time =  4.8000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3809E-05
+     Final energy norm                        =  7.0181E-12
+     Final displacement norm                  =  2.7946E-16
+     Required tolerance                       =  1.4541E-12
+
+ BEGIN implicit statics  time step      49                           
+ ============================================================
+                time =  4.90000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  2.0395114E-02     *Ei/E0 =  9.9869446E-01
+ Iteration:   2     *|du|/|u| =  1.4144051E-05     *Ei/E0 =  5.4492539E-07
+
+ Equilibrium convergence summary for time step      49 at time =  4.9000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3808E-05
+     Final energy norm                        =  7.5342E-12
+     Final displacement norm                  =  3.0313E-16
+     Required tolerance                       =  1.5152E-12
+
+ BEGIN implicit statics  time step      50                           
+ ============================================================
+                time =  5.00000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.9986669E-02     *Ei/E0 =  9.9863965E-01
+ Iteration:   2     *|du|/|u| =  1.4424703E-05     *Ei/E0 =  5.8457455E-07
+
+ Equilibrium convergence summary for time step      50 at time =  5.0000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3807E-05
+     Final energy norm                        =  8.0824E-12
+     Final displacement norm                  =  3.2826E-16
+     Required tolerance                       =  1.5776E-12
+     202 t 5.0000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      51                           
+ ============================================================
+                time =  5.10000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.9594230E-02     *Ei/E0 =  9.9858371E-01
+ Iteration:   2     *|du|/|u| =  1.4705208E-05     *Ei/E0 =  6.2663621E-07
+
+ Equilibrium convergence summary for time step      51 at time =  5.1000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3807E-05
+     Final energy norm                        =  8.6640E-12
+     Final displacement norm                  =  3.5491E-16
+     Required tolerance                       =  1.6413E-12
+
+ BEGIN implicit statics  time step      52                           
+ ============================================================
+                time =  5.20000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.9216875E-02     *Ei/E0 =  9.9852666E-01
+ Iteration:   2     *|du|/|u| =  1.4985565E-05     *Ei/E0 =  6.7120496E-07
+
+ Equilibrium convergence summary for time step      52 at time =  5.2000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3806E-05
+     Final energy norm                        =  9.2802E-12
+     Final displacement norm                  =  3.8315E-16
+     Required tolerance                       =  1.7062E-12
+
+ BEGIN implicit statics  time step      53                           
+ ============================================================
+                time =  5.30000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.8853749E-02     *Ei/E0 =  9.9846849E-01
+ Iteration:   2     *|du|/|u| =  1.5265770E-05     *Ei/E0 =  7.1837708E-07
+
+ Equilibrium convergence summary for time step      53 at time =  5.3000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3805E-05
+     Final energy norm                        =  9.9324E-12
+     Final displacement norm                  =  4.1302E-16
+     Required tolerance                       =  1.7723E-12
+
+ BEGIN implicit statics  time step      54                           
+ ============================================================
+                time =  5.40000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.8504062E-02     *Ei/E0 =  9.9840920E-01
+ Iteration:   2     *|du|/|u| =  1.5545820E-05     *Ei/E0 =  7.6825055E-07
+
+ Equilibrium convergence summary for time step      54 at time =  5.4000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3804E-05
+     Final energy norm                        =  1.0622E-11
+     Final displacement norm                  =  4.4460E-16
+     Required tolerance                       =  1.8397E-12
+
+ BEGIN implicit statics  time step      55                           
+ ============================================================
+                time =  5.50000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.8167080E-02     *Ei/E0 =  9.9834880E-01
+ Iteration:   2     *|du|/|u| =  1.5825714E-05     *Ei/E0 =  8.2092503E-07
+
+ Equilibrium convergence summary for time step      55 at time =  5.5000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3803E-05
+     Final energy norm                        =  1.1350E-11
+     Final displacement norm                  =  4.7795E-16
+     Required tolerance                       =  1.9084E-12
+     222 t 5.5000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      56                           
+ ============================================================
+                time =  5.60000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.7842124E-02     *Ei/E0 =  9.9828729E-01
+ Iteration:   2     *|du|/|u| =  1.6105448E-05     *Ei/E0 =  8.7650185E-07
+
+ Equilibrium convergence summary for time step      56 at time =  5.6000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3803E-05
+     Final energy norm                        =  1.2119E-11
+     Final displacement norm                  =  5.1313E-16
+     Required tolerance                       =  1.9783E-12
+
+ BEGIN implicit statics  time step      57                           
+ ============================================================
+                time =  5.70000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.7528560E-02     *Ei/E0 =  9.9822466E-01
+ Iteration:   2     *|du|/|u| =  1.6385020E-05     *Ei/E0 =  9.3508402E-07
+
+ Equilibrium convergence summary for time step      57 at time =  5.7000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3802E-05
+     Final energy norm                        =  1.2929E-11
+     Final displacement norm                  =  5.5020E-16
+     Required tolerance                       =  2.0494E-12
+
+ BEGIN implicit statics  time step      58                           
+ ============================================================
+                time =  5.80000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.7225799E-02     *Ei/E0 =  9.9816092E-01
+ Iteration:   2     *|du|/|u| =  1.6664427E-05     *Ei/E0 =  9.9677619E-07
+
+ Equilibrium convergence summary for time step      58 at time =  5.8000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3801E-05
+     Final energy norm                        =  1.3782E-11
+     Final displacement norm                  =  5.8923E-16
+     Required tolerance                       =  2.1218E-12
+
+ BEGIN implicit statics  time step      59                           
+ ============================================================
+                time =  5.90000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.6933291E-02     *Ei/E0 =  9.9809607E-01
+ Iteration:   2     *|du|/|u| =  1.6943666E-05     *Ei/E0 =  1.0616847E-06
+
+ Equilibrium convergence summary for time step      59 at time =  5.9000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3800E-05
+     Final energy norm                        =  1.4679E-11
+     Final displacement norm                  =  6.3029E-16
+     Required tolerance                       =  2.1955E-12
+
+ BEGIN implicit statics  time step      60                           
+ ============================================================
+                time =  6.00000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.6650525E-02     *Ei/E0 =  9.9803011E-01
+ Iteration:   2     *|du|/|u| =  1.7222736E-05     *Ei/E0 =  1.1299174E-06
+
+ Equilibrium convergence summary for time step      60 at time =  6.0000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3799E-05
+     Final energy norm                        =  1.5622E-11
+     Final displacement norm                  =  6.7344E-16
+     Required tolerance                       =  2.2704E-12
+     242 t 6.0000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      61                           
+ ============================================================
+                time =  6.10000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.6377020E-02     *Ei/E0 =  9.9796304E-01
+ Iteration:   2     *|du|/|u| =  1.7501633E-05     *Ei/E0 =  1.2015839E-06
+
+ Equilibrium convergence summary for time step      61 at time =  6.1000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3798E-05
+     Final energy norm                        =  1.6613E-11
+     Final displacement norm                  =  7.1875E-16
+     Required tolerance                       =  2.3465E-12
+
+ BEGIN implicit statics  time step      62                           
+ ============================================================
+                time =  6.20000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.6112329E-02     *Ei/E0 =  9.9789486E-01
+ Iteration:   2     *|du|/|u| =  1.7780354E-05     *Ei/E0 =  1.2767954E-06
+
+ Equilibrium convergence summary for time step      62 at time =  6.2000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3797E-05
+     Final energy norm                        =  1.7653E-11
+     Final displacement norm                  =  7.6630E-16
+     Required tolerance                       =  2.4239E-12
+
+ BEGIN implicit statics  time step      63                           
+ ============================================================
+                time =  6.30000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.5856033E-02     *Ei/E0 =  9.9782558E-01
+ Iteration:   2     *|du|/|u| =  1.8058897E-05     *Ei/E0 =  1.3556646E-06
+
+ Equilibrium convergence summary for time step      63 at time =  6.3000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3796E-05
+     Final energy norm                        =  1.8744E-11
+     Final displacement norm                  =  8.1614E-16
+     Required tolerance                       =  2.5026E-12
+
+ BEGIN implicit statics  time step      64                           
+ ============================================================
+                time =  6.40000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.5607737E-02     *Ei/E0 =  9.9775518E-01
+ Iteration:   2     *|du|/|u| =  1.8337260E-05     *Ei/E0 =  1.4383061E-06
+
+ Equilibrium convergence summary for time step      64 at time =  6.4000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3795E-05
+     Final energy norm                        =  1.9886E-11
+     Final displacement norm                  =  8.6836E-16
+     Required tolerance                       =  2.5825E-12
+
+ BEGIN implicit statics  time step      65                           
+ ============================================================
+                time =  6.50000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.5367072E-02     *Ei/E0 =  9.9768368E-01
+ Iteration:   2     *|du|/|u| =  1.8615439E-05     *Ei/E0 =  1.5248356E-06
+
+ Equilibrium convergence summary for time step      65 at time =  6.5000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3794E-05
+     Final energy norm                        =  2.1083E-11
+     Final displacement norm                  =  9.2303E-16
+     Required tolerance                       =  2.6636E-12
+     262 t 6.5000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      66                           
+ ============================================================
+                time =  6.60000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.5133692E-02     *Ei/E0 =  9.9761108E-01
+ Iteration:   2     *|du|/|u| =  1.8893433E-05     *Ei/E0 =  1.6153708E-06
+
+ Equilibrium convergence summary for time step      66 at time =  6.6000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3793E-05
+     Final energy norm                        =  2.2334E-11
+     Final displacement norm                  =  9.8021E-16
+     Required tolerance                       =  2.7460E-12
+
+ BEGIN implicit statics  time step      67                           
+ ============================================================
+                time =  6.70000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.4907270E-02     *Ei/E0 =  9.9753737E-01
+ Iteration:   2     *|du|/|u| =  1.9171238E-05     *Ei/E0 =  1.7100307E-06
+
+ Equilibrium convergence summary for time step      67 at time =  6.7000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3792E-05
+     Final energy norm                        =  2.3643E-11
+     Final displacement norm                  =  1.0400E-15
+     Required tolerance                       =  2.8296E-12
+
+ BEGIN implicit statics  time step      68                           
+ ============================================================
+                time =  6.80000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.4687499E-02     *Ei/E0 =  9.9746256E-01
+ Iteration:   2     *|du|/|u| =  1.9448851E-05     *Ei/E0 =  1.8089361E-06
+
+ Equilibrium convergence summary for time step      68 at time =  6.8000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3791E-05
+     Final energy norm                        =  2.5011E-11
+     Final displacement norm                  =  1.1024E-15
+     Required tolerance                       =  2.9145E-12
+
+ BEGIN implicit statics  time step      69                           
+ ============================================================
+                time =  6.90000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.4474091E-02     *Ei/E0 =  9.9738665E-01
+ Iteration:   2     *|du|/|u| =  1.9726271E-05     *Ei/E0 =  1.9122091E-06
+
+ Equilibrium convergence summary for time step      69 at time =  6.9000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3790E-05
+     Final energy norm                        =  2.6439E-11
+     Final displacement norm                  =  1.1676E-15
+     Required tolerance                       =  3.0006E-12
+
+ BEGIN implicit statics  time step      70                           
+ ============================================================
+                time =  7.00000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.4266772E-02     *Ei/E0 =  9.9730963E-01
+ Iteration:   2     *|du|/|u| =  2.0003495E-05     *Ei/E0 =  2.0199734E-06
+
+ Equilibrium convergence summary for time step      70 at time =  7.0000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3789E-05
+     Final energy norm                        =  2.7929E-11
+     Final displacement norm                  =  1.2356E-15
+     Required tolerance                       =  3.0880E-12
+     282 t 7.0000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      71                           
+ ============================================================
+                time =  7.10000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.4065285E-02     *Ei/E0 =  9.9723152E-01
+ Iteration:   2     *|du|/|u| =  2.0280519E-05     *Ei/E0 =  2.1323544E-06
+
+ Equilibrium convergence summary for time step      71 at time =  7.1000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3788E-05
+     Final energy norm                        =  2.9482E-11
+     Final displacement norm                  =  1.3065E-15
+     Required tolerance                       =  3.1766E-12
+
+ BEGIN implicit statics  time step      72                           
+ ============================================================
+                time =  7.20000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.3869388E-02     *Ei/E0 =  9.9715231E-01
+ Iteration:   2     *|du|/|u| =  2.0557341E-05     *Ei/E0 =  2.2494787E-06
+
+ Equilibrium convergence summary for time step      72 at time =  7.2000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3787E-05
+     Final energy norm                        =  3.1102E-11
+     Final displacement norm                  =  1.3804E-15
+     Required tolerance                       =  3.2664E-12
+
+ BEGIN implicit statics  time step      73                           
+ ============================================================
+                time =  7.30000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.3678850E-02     *Ei/E0 =  9.9707200E-01
+ Iteration:   2     *|du|/|u| =  2.0833960E-05     *Ei/E0 =  2.3714747E-06
+
+ Equilibrium convergence summary for time step      73 at time =  7.3000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3786E-05
+     Final energy norm                        =  3.2788E-11
+     Final displacement norm                  =  1.4573E-15
+     Required tolerance                       =  3.3575E-12
+
+ BEGIN implicit statics  time step      74                           
+ ============================================================
+                time =  7.40000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.3493455E-02     *Ei/E0 =  9.9699059E-01
+ Iteration:   2     *|du|/|u| =  2.1110371E-05     *Ei/E0 =  2.4984720E-06
+
+ Equilibrium convergence summary for time step      74 at time =  7.4000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3785E-05
+     Final energy norm                        =  3.4544E-11
+     Final displacement norm                  =  1.5374E-15
+     Required tolerance                       =  3.4498E-12
+
+ BEGIN implicit statics  time step      75                           
+ ============================================================
+                time =  7.50000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.3312995E-02     *Ei/E0 =  9.9690809E-01
+ Iteration:   2     *|du|/|u| =  2.1386573E-05     *Ei/E0 =  2.6306020E-06
+
+ Equilibrium convergence summary for time step      75 at time =  7.5000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3783E-05
+     Final energy norm                        =  3.6371E-11
+     Final displacement norm                  =  1.6207E-15
+     Required tolerance                       =  3.5434E-12
+     302 t 7.5000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      76                           
+ ============================================================
+                time =  7.60000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.3137278E-02     *Ei/E0 =  9.9682449E-01
+ Iteration:   2     *|du|/|u| =  2.1662562E-05     *Ei/E0 =  2.7679972E-06
+
+ Equilibrium convergence summary for time step      76 at time =  7.6000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3782E-05
+     Final energy norm                        =  3.8271E-11
+     Final displacement norm                  =  1.7073E-15
+     Required tolerance                       =  3.6382E-12
+
+ BEGIN implicit statics  time step      77                           
+ ============================================================
+                time =  7.70000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.2966118E-02     *Ei/E0 =  9.9673980E-01
+ Iteration:   2     *|du|/|u| =  2.1938337E-05     *Ei/E0 =  2.9107918E-06
+
+ Equilibrium convergence summary for time step      77 at time =  7.7000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3781E-05
+     Final energy norm                        =  4.0245E-11
+     Final displacement norm                  =  1.7973E-15
+     Required tolerance                       =  3.7343E-12
+
+ BEGIN implicit statics  time step      78                           
+ ============================================================
+                time =  7.80000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.2799339E-02     *Ei/E0 =  9.9665402E-01
+ Iteration:   2     *|du|/|u| =  2.2213895E-05     *Ei/E0 =  3.0591215E-06
+
+ Equilibrium convergence summary for time step      78 at time =  7.8000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3780E-05
+     Final energy norm                        =  4.2296E-11
+     Final displacement norm                  =  1.8907E-15
+     Required tolerance                       =  3.8316E-12
+
+ BEGIN implicit statics  time step      79                           
+ ============================================================
+                time =  7.90000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.2636776E-02     *Ei/E0 =  9.9656715E-01
+ Iteration:   2     *|du|/|u| =  2.2489233E-05     *Ei/E0 =  3.2131231E-06
+
+ Equilibrium convergence summary for time step      79 at time =  7.9000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3779E-05
+     Final energy norm                        =  4.4425E-11
+     Final displacement norm                  =  1.9877E-15
+     Required tolerance                       =  3.9301E-12
+
+ BEGIN implicit statics  time step      80                           
+ ============================================================
+                time =  8.00000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.2478270E-02     *Ei/E0 =  9.9647918E-01
+ Iteration:   2     *|du|/|u| =  2.2764348E-05     *Ei/E0 =  3.3729351E-06
+
+ Equilibrium convergence summary for time step      80 at time =  8.0000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3778E-05
+     Final energy norm                        =  4.6635E-11
+     Final displacement norm                  =  2.0883E-15
+     Required tolerance                       =  4.0299E-12
+     322 t 8.0000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      81                           
+ ============================================================
+                time =  8.10000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.2323671E-02     *Ei/E0 =  9.9639013E-01
+ Iteration:   2     *|du|/|u| =  2.3039238E-05     *Ei/E0 =  3.5386973E-06
+
+ Equilibrium convergence summary for time step      81 at time =  8.1000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3776E-05
+     Final energy norm                        =  4.8927E-11
+     Final displacement norm                  =  2.1927E-15
+     Required tolerance                       =  4.1309E-12
+
+ BEGIN implicit statics  time step      82                           
+ ============================================================
+                time =  8.20000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.2172836E-02     *Ei/E0 =  9.9629999E-01
+ Iteration:   2     *|du|/|u| =  2.3313901E-05     *Ei/E0 =  3.7105510E-06
+
+ Equilibrium convergence summary for time step      82 at time =  8.2000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3775E-05
+     Final energy norm                        =  5.1303E-11
+     Final displacement norm                  =  2.3009E-15
+     Required tolerance                       =  4.2331E-12
+
+ BEGIN implicit statics  time step      83                           
+ ============================================================
+                time =  8.30000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.2025629E-02     *Ei/E0 =  9.9620876E-01
+ Iteration:   2     *|du|/|u| =  2.3588333E-05     *Ei/E0 =  3.8886386E-06
+
+ Equilibrium convergence summary for time step      83 at time =  8.3000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3774E-05
+     Final energy norm                        =  5.3765E-11
+     Final displacement norm                  =  2.4129E-15
+     Required tolerance                       =  4.3366E-12
+
+ BEGIN implicit statics  time step      84                           
+ ============================================================
+                time =  8.40000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.1881921E-02     *Ei/E0 =  9.9611645E-01
+ Iteration:   2     *|du|/|u| =  2.3862533E-05     *Ei/E0 =  4.0731041E-06
+
+ Equilibrium convergence summary for time step      84 at time =  8.4000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3772E-05
+     Final energy norm                        =  5.6316E-11
+     Final displacement norm                  =  2.5290E-15
+     Required tolerance                       =  4.4413E-12
+
+ BEGIN implicit statics  time step      85                           
+ ============================================================
+                time =  8.50000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.1741587E-02     *Ei/E0 =  9.9602306E-01
+ Iteration:   2     *|du|/|u| =  2.4136497E-05     *Ei/E0 =  4.2640929E-06
+
+ Equilibrium convergence summary for time step      85 at time =  8.5000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3771E-05
+     Final energy norm                        =  5.8956E-11
+     Final displacement norm                  =  2.6491E-15
+     Required tolerance                       =  4.5473E-12
+     342 t 8.5000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      86                           
+ ============================================================
+                time =  8.60000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.1604511E-02     *Ei/E0 =  9.9592858E-01
+ Iteration:   2     *|du|/|u| =  2.4410224E-05     *Ei/E0 =  4.4617515E-06
+
+ Equilibrium convergence summary for time step      86 at time =  8.6000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3770E-05
+     Final energy norm                        =  6.1689E-11
+     Final displacement norm                  =  2.7734E-15
+     Required tolerance                       =  4.6544E-12
+
+ BEGIN implicit statics  time step      87                           
+ ============================================================
+                time =  8.70000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.1470580E-02     *Ei/E0 =  9.9583302E-01
+ Iteration:   2     *|du|/|u| =  2.4683710E-05     *Ei/E0 =  4.6662280E-06
+
+ Equilibrium convergence summary for time step      87 at time =  8.7000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3769E-05
+     Final energy norm                        =  6.4516E-11
+     Final displacement norm                  =  2.9019E-15
+     Required tolerance                       =  4.7628E-12
+
+ BEGIN implicit statics  time step      88                           
+ ============================================================
+                time =  8.80000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.1339687E-02     *Ei/E0 =  9.9573638E-01
+ Iteration:   2     *|du|/|u| =  2.4956954E-05     *Ei/E0 =  4.8776715E-06
+
+ Equilibrium convergence summary for time step      88 at time =  8.8000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3767E-05
+     Final energy norm                        =  6.7440E-11
+     Final displacement norm                  =  3.0348E-15
+     Required tolerance                       =  4.8725E-12
+
+ BEGIN implicit statics  time step      89                           
+ ============================================================
+                time =  8.90000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.1211728E-02     *Ei/E0 =  9.9563866E-01
+ Iteration:   2     *|du|/|u| =  2.5229952E-05     *Ei/E0 =  5.0962327E-06
+
+ Equilibrium convergence summary for time step      89 at time =  8.9000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3766E-05
+     Final energy norm                        =  7.0461E-11
+     Final displacement norm                  =  3.1722E-15
+     Required tolerance                       =  4.9834E-12
+
+ BEGIN implicit statics  time step      90                           
+ ============================================================
+                time =  9.00000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.1086608E-02     *Ei/E0 =  9.9553986E-01
+ Iteration:   2     *|du|/|u| =  2.5502702E-05     *Ei/E0 =  5.3220633E-06
+
+ Equilibrium convergence summary for time step      90 at time =  9.0000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3765E-05
+     Final energy norm                        =  7.3584E-11
+     Final displacement norm                  =  3.3140E-15
+     Required tolerance                       =  5.0955E-12
+     362 t 9.0000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      91                           
+ ============================================================
+                time =  9.10000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.0964231E-02     *Ei/E0 =  9.9543999E-01
+ Iteration:   2     *|du|/|u| =  2.5775202E-05     *Ei/E0 =  5.5553166E-06
+
+ Equilibrium convergence summary for time step      91 at time =  9.1000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3763E-05
+     Final energy norm                        =  7.6809E-11
+     Final displacement norm                  =  3.4605E-15
+     Required tolerance                       =  5.2088E-12
+
+ BEGIN implicit statics  time step      92                           
+ ============================================================
+                time =  9.20000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.0844509E-02     *Ei/E0 =  9.9533904E-01
+ Iteration:   2     *|du|/|u| =  2.6047449E-05     *Ei/E0 =  5.7961469E-06
+
+ Equilibrium convergence summary for time step      92 at time =  9.2000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3762E-05
+     Final energy norm                        =  8.0139E-11
+     Final displacement norm                  =  3.6117E-15
+     Required tolerance                       =  5.3234E-12
+
+ BEGIN implicit statics  time step      93                           
+ ============================================================
+                time =  9.30000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.0727356E-02     *Ei/E0 =  9.9523702E-01
+ Iteration:   2     *|du|/|u| =  2.6319440E-05     *Ei/E0 =  6.0447098E-06
+
+ Equilibrium convergence summary for time step      93 at time =  9.3000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3760E-05
+     Final energy norm                        =  8.3575E-11
+     Final displacement norm                  =  3.7678E-15
+     Required tolerance                       =  5.4392E-12
+
+ BEGIN implicit statics  time step      94                           
+ ============================================================
+                time =  9.40000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.0612690E-02     *Ei/E0 =  9.9513393E-01
+ Iteration:   2     *|du|/|u| =  2.6591174E-05     *Ei/E0 =  6.3011621E-06
+
+ Equilibrium convergence summary for time step      94 at time =  9.4000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3759E-05
+     Final energy norm                        =  8.7121E-11
+     Final displacement norm                  =  3.9287E-15
+     Required tolerance                       =  5.5562E-12
+
+ BEGIN implicit statics  time step      95                           
+ ============================================================
+                time =  9.50000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.0500432E-02     *Ei/E0 =  9.9502976E-01
+ Iteration:   2     *|du|/|u| =  2.6862647E-05     *Ei/E0 =  6.5656621E-06
+
+ Equilibrium convergence summary for time step      95 at time =  9.5000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3757E-05
+     Final energy norm                        =  9.0778E-11
+     Final displacement norm                  =  4.0947E-15
+     Required tolerance                       =  5.6744E-12
+     382 t 9.5000E-01 dt 1.00E-02 write d3plot file
+
+ BEGIN implicit statics  time step      96                           
+ ============================================================
+                time =  9.60000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.0390507E-02     *Ei/E0 =  9.9492453E-01
+ Iteration:   2     *|du|/|u| =  2.7133858E-05     *Ei/E0 =  6.8383688E-06
+
+ Equilibrium convergence summary for time step      96 at time =  9.6000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3756E-05
+     Final energy norm                        =  9.4549E-11
+     Final displacement norm                  =  4.2657E-15
+     Required tolerance                       =  5.7939E-12
+
+ BEGIN implicit statics  time step      97                           
+ ============================================================
+                time =  9.70000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.0282843E-02     *Ei/E0 =  9.9481823E-01
+ Iteration:   2     *|du|/|u| =  2.7404803E-05     *Ei/E0 =  7.1194428E-06
+
+ Equilibrium convergence summary for time step      97 at time =  9.7000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3755E-05
+     Final energy norm                        =  9.8435E-11
+     Final displacement norm                  =  4.4420E-15
+     Required tolerance                       =  5.9146E-12
+
+ BEGIN implicit statics  time step      98                           
+ ============================================================
+                time =  9.80000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.0177372E-02     *Ei/E0 =  9.9471086E-01
+ Iteration:   2     *|du|/|u| =  2.7675480E-05     *Ei/E0 =  7.4090458E-06
+
+ Equilibrium convergence summary for time step      98 at time =  9.8000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3753E-05
+     Final energy norm                        =  1.0244E-10
+     Final displacement norm                  =  4.6236E-15
+     Required tolerance                       =  6.0365E-12
+
+ BEGIN implicit statics  time step      99                           
+ ============================================================
+                time =  9.90000E-01
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  1.0074025E-02     *Ei/E0 =  9.9460242E-01
+ Iteration:   2     *|du|/|u| =  2.7945888E-05     *Ei/E0 =  7.7073405E-06
+
+ Equilibrium convergence summary for time step      99 at time =  9.9000000E-01
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3752E-05
+     Final energy norm                        =  1.0656E-10
+     Final displacement norm                  =  4.8105E-15
+     Required tolerance                       =  6.1597E-12
+
+ BEGIN implicit statics  time step     100                           
+ ============================================================
+                time =  1.00000E+00
+   current step size =  1.00000E-02
+ Iteration:   1     *|du|/|u| =  9.9727399E-03     *Ei/E0 =  9.9449293E-01
+ Iteration:   2     *|du|/|u| =  2.8216023E-05     *Ei/E0 =  8.0144909E-06
+
+ Equilibrium convergence summary for time step     100 at time =  1.0000000E+00
+     Number of iterations to converge         =    2
+     Number of stiffness reformations         =    0
+     Number of right hand side evaluations    =    3
+     Initial energy norm                      =  1.3750E-05
+     Final energy norm                        =  1.1081E-10
+     Final displacement norm                  =  5.0030E-15
+     Required tolerance                       =  6.2840E-12
+     402 t 1.0000E+00 dt 1.00E-02 write d3plot file
+
+ *** termination time reached ***
+     402 t 1.0000E+00 dt 1.00E-02 write d3dump01 file
+ Memory required for implicit solution: maximum      520166
+
+ T i m i n g   i n f o r m a t i o n
+                        CPU(seconds)   %CPU  Clock(seconds) %Clock
+  ----------------------------------------------------------------
+  Initialization ....... 4.0000E-02    1.16     3.0270E-01    7.32
+  Element processing ... 1.9800E+00   57.39     2.0145E+00   48.74
+  Binary databases ..... 0.0000E+00    0.00     1.6121E-02    0.39
+  ASCII database ....... 1.0000E-02    0.29     4.9520E-03    0.12
+  Contact algorithm .... 0.0000E+00    0.00     3.8820E-03    0.09
+  Contact entities ..... 0.0000E+00    0.00     0.0000E+00    0.00
+  Rigid bodies ......... 0.0000E+00    0.00     1.3350E-03    0.03
+  Implicit Nonlinear ... 2.1000E-01    6.09     4.1245E-01    9.98
+  Implicit Lin. Alg. ... 1.2100E+00   35.07     1.3772E+00   33.32
+  ----------------------------------------------------------------
+  T o t a l s            3.4500E+00  100.00     4.1331E+00  100.00
+
+ Problem time       =    1.0000E+00
+ Problem cycle      =       402
+ Total CPU time     =         3 seconds (   0 hours  0 minutes  3 seconds)
+ CPU time per zone cycle  =     70104 nanoseconds
+ Clock time per zone cycle=     78746 nanoseconds
+
+ Number of CPU's    1
+ NLQ used/max     136/  136
+ Start time   05/28/2012 12:31:44  
+ End time     05/28/2012 12:31:48  
+ Elapsed time       4 seconds(  0 hours  0 min.  4 sec.) for     402 cycles
+
+ N o r m a l    t e r m i n a t i o n
